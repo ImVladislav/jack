@@ -292,7 +292,7 @@ html {
 body {
     margin: 0;
     line-height: inherit;
-    background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(to bottom, #ffb6c1, #fff, #ffb6c1);
 	background-color: #E94E77;
 }
 
