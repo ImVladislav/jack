@@ -2,13 +2,13 @@
     position: absolute;
     background: url(./broken-heart-shapes-svgrepo-com.svg) no-repeat top left;
     background-size: contain;
-    z-index: 100000;
+    z-index: 10;
     cursor:pointer;
 }
 .text{
   position:relative;
-  width: 24px;
-    height: 24px;
+  width: 34px;
+    height: 34px;
   display:inline-block;
   opacity:.4;
 }
