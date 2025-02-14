@@ -1,6 +1,6 @@
 .heart {
     position: absolute;
-    background: url(http://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg) no-repeat top left;
+    background: url(./broken-heart-shapes-svgrepo-com.svg) no-repeat top left;
     background-size: contain;
     z-index: 100000;
     cursor:pointer;

@@ -4176,7 +4176,7 @@ button.link:active {
     }
 
     .xs\:grid-cols-6 {
-        grid-template-columns: repeat(6, minmax(0, 1fr))
+        grid-template-columns: repeat(4, minmax(0, 1fr))
     }
 
     .xs\:gap-x-4 {
@@ -4407,7 +4407,7 @@ button.link:active {
     }
 
     .md\:grid-cols-6 {
-        grid-template-columns: repeat(6, minmax(0, 1fr))
+        grid-template-columns: repeat(4, minmax(0, 1fr))
     }
 
     .md\:flex-row {
@@ -4505,7 +4505,7 @@ button.link:active {
     }
 
     .lg\:grid-cols-10 {
-        grid-template-columns: repeat(10, minmax(0, 1fr))
+        grid-template-columns: repeat(4, minmax(0, 1fr))
     }
 
     .lg\:grid-cols-4 {
@@ -4513,7 +4513,7 @@ button.link:active {
     }
 
     .lg\:grid-cols-6 {
-        grid-template-columns: repeat(6, minmax(0, 1fr))
+        grid-template-columns: repeat(4, minmax(0, 1fr))
     }
 
     .lg\:flex-row {
