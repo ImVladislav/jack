@@ -99,3 +99,28 @@ $(function() {
         return false;
     }
 });
+
+
+
+
+
+
+document.getElementById('no-btn').addEventListener('mouseover', function() {
+    this.style.position = 'fixed';
+    const maxX = window.innerWidth - this.clientWidth;
+    const maxY = window.innerHeight - this.clientHeight;
+    this.style.left = `${Math.random() * maxX}px`;
+    this.style.top = `${Math.random() * maxY}px`;
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("valentine-modal");
+    const mainContent = document.getElementById("main-content");
+    const yesBtn = document.getElementById("yes-btn");
+
+    // При натисканні на "Yes" закриваємо модалку та показуємо контент
+    yesBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+        mainContent.style.display = "block";
+    });
+});
