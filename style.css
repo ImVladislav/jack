@@ -1,0 +1,71 @@
+.heart {
+    position: absolute;
+    background: url(http://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg) no-repeat top left;
+    background-size: contain;
+    z-index: 100000;
+    cursor:pointer;
+}
+.text{
+  position:relative;
+  width: 24px;
+    height: 24px;
+  display:inline-block;
+  opacity:.4;
+}
+.heart.teaser {
+    width: 34px;
+    height: 34px;
+    transition-property: top, left;
+    transition-duration: 1s;
+    -o-transition-property: top, left;
+    -o-transition-duration: 1s;
+    -ms-transition-property: top, left;
+    -ms-transition-duration: 1s;
+    -moz-transition-property: top, left;
+    -moz-transition-duration: 1s;
+    -webkit-transition-property: top, left;
+    -webkit-transition-duration: 1s;
+}
+.heart.pop {
+    opacity: 0;
+    animation-duration: .5s;
+    animation-name: pop;
+    -o-animation-duration: .5s;
+    -o-animation-name: pop;
+    -ms-animation-duration: .5s;
+    -ms-animation-name: pop;
+    -moz-animation-duration: .5s;
+    -moz-animation-name: pop;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-name: pop;
+}
+@keyframes pop {
+    from {margin-left: 46px; margin-top: 42px; width: 92px; height: 84px; opacity: 0;}
+    20% {opacity: 1;}
+    40% {opacity: 1;}
+    to {margin-left: 0; margin-top: 0; width: 184px; height: 167px; opacity: 0;}
+}
+@-o-keyframes pop {
+    from {margin-left: 46px; margin-top: 42px; width: 92px; height: 84px; opacity: 0;}
+    20% {opacity: 1;}
+    40% {opacity: 1;}
+    to {margin-left: 0; margin-top: 0; width: 184px; height: 167px; opacity: 0;}
+}
+@-ms-keyframes pop {
+    from {margin-left: 46px; margin-top: 42px; width: 92px; height: 84px; opacity: 0;}
+    20% {opacity: 1;}
+    40% {opacity: 1;}
+    to {margin-left: 0; margin-top: 0; width: 184px; height: 167px; opacity: 0;}
+}
+@-moz-keyframes pop {
+    from {margin-left: 46px; margin-top: 42px; width: 92px; height: 84px; opacity: 0;}
+    20% {opacity: 1;}
+    40% {opacity: 1;}
+    to {margin-left: 0; margin-top: 0; width: 184px; height: 167px; opacity: 0;}
+}
+@-webkit-keyframes pop {
+    from {margin-left: 46px; margin-top: 42px; width: 92px; height: 84px; opacity: 0;}
+    20% {opacity: 1;}
+    40% {opacity: 1;}
+    to {margin-left: 0; margin-top: 0; width: 184px; height: 167px; opacity: 0;}
+}
