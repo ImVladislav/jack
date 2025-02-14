@@ -174,3 +174,16 @@ button {
     border: none;
     border-radius: 5px;
 }
+
+
+@font-face {
+    font-family: 'Cheeseburger';
+    src: url('fonts/A.CHEESEBURGER.ALEN_.RUS__0.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Використання шрифту */
+body {
+    font-family: 'Cheeseburger', sans-serif;
+}

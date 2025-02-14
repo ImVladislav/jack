@@ -4655,3 +4655,16 @@ button.link:active {
         transform: none
     }
 }
+
+
+@font-face {
+    font-family: 'Cheeseburger';
+    src: url('/A.CHEESEBURGER.ALEN_.RUS__0.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Використання шрифту */
+body {
+    font-family: 'Cheeseburger', sans-serif;
+}
