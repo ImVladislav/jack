@@ -144,10 +144,10 @@ document.addEventListener("DOMContentLoaded", function () {
     musicToggle.addEventListener("click", function () {
         if (music.paused) {
             music.play();
-            musicToggle.textContent = "🔊";
+            musicToggle.textContent = "💖";
         } else {
             music.pause();
-            musicToggle.textContent = "🔇";
+            musicToggle.textContent = "💔";
         }
     });
 
