@@ -839,7 +839,7 @@ textarea:is(.dark *) {
     --tw-border-opacity: 1;
     border-color: rgb(55 65 81/var(--tw-border-opacity, 1));
     --tw-bg-opacity: 1;
-    background-color: rgb(4 201 131/var(--tw-bg-opacity, 1))
+    /* background-color: rgb(4 201 131/var(--tw-bg-opacity, 1)) */
 }
 
 input[type=email],
@@ -1355,7 +1355,7 @@ button.link:active {
 
 .bg-main:is(.dark *) {
     --tw-bg-opacity: 1;
-    background-color: rgb(4 201 131/var(--tw-bg-opacity, 1))
+    /* background-color: rgb(4 201 131/var(--tw-bg-opacity, 1)) */
 }
 
 .bg-dim {
@@ -2710,7 +2710,7 @@ button.link:active {
 
 .bg-\[\#04c983\] {
     --tw-bg-opacity: 1;
-    background-color: rgb(4 201 131/var(--tw-bg-opacity, 1))
+    /* background-color: rgb(4 201 131/var(--tw-bg-opacity, 1)) */
 }
 
 .bg-amber-50\/50 {
@@ -2763,7 +2763,7 @@ button.link:active {
 
 .bg-jakgreen {
     --tw-bg-opacity: 1;
-    background-color: rgb(4 201 131/var(--tw-bg-opacity, 1))
+    /* background-color: rgb(4 201 131/var(--tw-bg-opacity, 1)) */
 }
 
 .bg-pink-100 {
