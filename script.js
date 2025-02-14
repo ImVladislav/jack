@@ -119,17 +119,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const yesBtn = document.getElementById("yes-btn");
     const noBtn = document.getElementById("no-btn");
     const music = document.getElementById("background-music");
-    const musicToggle = document.getElementById("music-toggle");
+    const musicToggle = document.querySelector("#music-toggle"); // Використовуємо querySelector для точного вибору
+
+    // Перевіряємо, чи знайдено кнопку
+    if (!musicToggle) {
+        console.error("❌ Кнопка керування музикою не знайдена!");
+        return;
+    }
+
+    console.log("✅ Кнопка керування музикою знайдена!");
 
     // При натисканні на "Yes" закриваємо модалку, показуємо сайт та вмикаємо музику
     yesBtn.addEventListener("click", function () {
         modal.style.display = "none";
-        mainContent.style.display = "block";
+        if (mainContent) mainContent.style.display = "block";
 
         // Відтворюємо музику лише після взаємодії користувача
         music.play().then(() => {
-            musicToggle.style.display = "block"; // Показуємо кнопку музики
-        }).catch(error => console.warn("Браузер заборонив автозапуск музики:", error));
+            musicToggle.style.display = "block"; // Показуємо кнопку
+        }).catch(error => console.warn("⚠️ Браузер заборонив автозапуск музики:", error));
     });
 
     // Кнопка перемикання музики

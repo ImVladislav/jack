@@ -146,7 +146,7 @@
 
 <!-- Додаємо тег аудіо -->
 <audio id="background-music" loop>
-    <source src="Akon - Lonely.mp3" type="audio/mpeg">
+    <source src="1.mp3" type="audio/mpeg">
     Your browser does not support the audio tag.
 </audio>
 
@@ -181,7 +181,7 @@
             </main>
         </div>
 
-<!-- Модальне вікно -->
+<!-- Модальне вікно (без кнопки музики) -->
 <div id="valentine-modal" class="modal">
     <div class="modal-content">
         <p style="color:black;">Are you jerking off ? 💖</p>
@@ -189,6 +189,15 @@
         <button id="no-btn">No</button>
     </div>
 </div>
+
+<!-- Кнопка керування музикою (ЗА межами модального вікна) -->
+<button id="music-toggle" style="position: fixed; bottom: 20px; right: 20px; background: #ff69b4; color: white; border: none; border-radius: 50%; padding: 15px; font-size: 24px; cursor: pointer; z-index: 1000; display: none;">🔊</button>
+
+<!-- Додаємо тег аудіо -->
+<audio id="background-music" loop>
+    <source src="1.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
 
 
 
