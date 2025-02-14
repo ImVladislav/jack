@@ -187,3 +187,19 @@ button {
 body {
     font-family: 'Cheeseburger', sans-serif;
 }
+
+
+#music-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none; /* Спочатку прихована */
+}

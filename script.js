@@ -117,10 +117,35 @@ document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("valentine-modal");
     const mainContent = document.getElementById("main-content");
     const yesBtn = document.getElementById("yes-btn");
+    const noBtn = document.getElementById("no-btn");
+    const music = document.getElementById("background-music");
+    const musicToggle = document.getElementById("music-toggle");
 
-    // При натисканні на "Yes" закриваємо модалку та показуємо контент
+    // При натисканні на "Yes" закриваємо модалку, показуємо сайт та вмикаємо музику
     yesBtn.addEventListener("click", function () {
         modal.style.display = "none";
         mainContent.style.display = "block";
+        music.play();
+        musicToggle.style.display = "block";
+    });
+
+    // Кнопка перемикання музики
+    musicToggle.addEventListener("click", function () {
+        if (music.paused) {
+            music.play();
+            musicToggle.textContent = "🔊";
+        } else {
+            music.pause();
+            musicToggle.textContent = "🔇";
+        }
+    });
+
+    // Рухома кнопка "No"
+    noBtn.addEventListener("mouseover", function () {
+        this.style.position = 'fixed';
+        const maxX = window.innerWidth - this.clientWidth;
+        const maxY = window.innerHeight - this.clientHeight;
+        this.style.left = `${Math.random() * maxX}px`;
+        this.style.top = `${Math.random() * maxY}px`;
     });
 });
