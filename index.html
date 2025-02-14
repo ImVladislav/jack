@@ -12,38 +12,9 @@
     <link rel="preload" as="image" href="social-icons/jak-dextools.png">
     <link rel="preload" as="image" href="social-icons/jak-x.png">
     <link rel="preload" as="image" href="social-icons/jak-telegram.png">
-    <link rel="preload" as="image" href="social-icons/jak-mexc.png">
-    <link rel="preload" as="image" href="social-icons/jak-cg.png">
-    <link rel="preload" as="image" href="social-icons/jak-tiktok.png">
-    <link rel="preload" as="image" href="social-icons/jak-cmc.png">
-    <link rel="preload" as="image" href="social-icons/jak-pumpfun.png">
+
     <link rel="stylesheet" href="_next/static/css/1e32a25202314f40.css" data-precedence="next">
-    <link rel="preload" as="script" fetchpriority="low" href="_next/static/chunks/webpack-42017982c6c96299.js">
-    <script src="_next/static/chunks/cf2ae71c-8df9842cf56197cd.js" async=""></script>
-    <script src="_next/static/chunks/1391-74838ffcc18dcfdc.js" async=""></script>
-    <script src="_next/static/chunks/main-app-adf58f30932959b5.js" async=""></script>
-    <script src="_next/static/chunks/015cd758-08f3937d6248c7bf.js" async=""></script>
-    <script src="_next/static/chunks/b1b46485-ad6b2e5ea01c507e.js" async=""></script>
-    <script src="_next/static/chunks/c556396d-4f9ea381c426314e.js" async=""></script>
-    <script src="_next/static/chunks/5e319edb-0fab84673d9aaf45.js" async=""></script>
-    <script src="_next/static/chunks/0722dcf8-b3a2a8420d356d25.js" async=""></script>
-    <script src="_next/static/chunks/b281fec4-1fd5b5484446cf70.js" async=""></script>
-    <script src="_next/static/chunks/46baf02a-8f7d504c285ea690.js" async=""></script>
-    <script src="_next/static/chunks/30ffaee2-e600358836b004cc.js" async=""></script>
-    <script src="_next/static/chunks/89a05850-fd9a25cd2e27c5dc.js" async=""></script>
-    <script src="_next/static/chunks/8296-966396c534180d52.js" async=""></script>
-    <script src="_next/static/chunks/1351-9cdbadb893756e62.js" async=""></script>
-    <script src="_next/static/chunks/1057-785176047d91d66f.js" async=""></script>
-    <script src="_next/static/chunks/7825-8b1f687d14fd5920.js" async=""></script>
-    <script src="_next/static/chunks/6619-33eed0ee9a59bc95.js" async=""></script>
-    <script src="_next/static/chunks/1605-d3700f2084ec4613.js" async=""></script>
-    <script src="_next/static/chunks/9035-6babbb1ef2cf204b.js" async=""></script>
-    <script src="_next/static/chunks/7186-e429b6fa71c94fc1.js" async=""></script>
-    <script src="_next/static/chunks/9645-420cd87e174eff37.js" async=""></script>
-    <script src="_next/static/chunks/9114-5fa1f932a1feab87.js" async=""></script>
-    <script src="_next/static/chunks/2703-13d9a20a897c3589.js" async=""></script>
-    <script src="_next/static/chunks/app/layout-57ea0a1fadf0bbea.js" async=""></script>
-    <script src="_next/static/chunks/app/page-4588076bfbb8b518.js" async=""></script>
+
     <link rel="preload" as="image" href="social-icons/jak-youtube.png">
     <link rel="preload" as="image" href="jak_left.png">
     <link rel="preload" as="image" href="jak_slogan.png">
@@ -170,6 +141,15 @@
                         </div>
                     </div>
                 </section>
+<!-- Кнопка керування музикою -->
+<button id="music-toggle" style="position: fixed; bottom: 20px; right: 20px; background: #ff69b4; color: white; border: none; border-radius: 50%; padding: 15px; font-size: 24px; cursor: pointer; z-index: 1000; display: none;">🔊</button>
+
+<!-- Додаємо тег аудіо -->
+<audio id="background-music" loop>
+    <source src="Akon - Lonely.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
+
                 <section class="w-full bg-jakgreen flex flex-col items-center"><img alt="JAK" loading="lazy"
                         width="1000" height="500" decoding="async" data-nimg="1" class="h-auto w-full max-w-[1500px]"
                         style="color:transparent"
@@ -183,44 +163,8 @@
                         style="color:transparent"
                         srcset="_next/tokenomics-1.png 1x?url=%2Ftokenomics.png&amp;w=1080&amp;q=75 1x, _next/tokenomics.png 2xe?url=%2Ftokenomics.png&amp;w=2048&amp;q=75 2x"
                         src="_next/tokenomics.png?url=%2Ftokenomics.png&amp;w=2048&amp;q=75"></section>
-                <!-- <section class="w-full py-10 px-4">
-                    <div class="max-w-7xl mx-auto text-center">
-                        <h2 class="text-6xl font-serif font-bold text-white mb-6">$JAK Gains Calculator</h2>
-                        <p class="text-2xl text-white">Estimate your journey from wage cage to financial freedom with
-                            $JAK </p>
-                    </div>
+
                 </section>
-                <section class="w-full py-4 px-4">
-                    <div class="max-w-7xl mx-auto">
-                        <div class="bg-white bg-opacity-90 rounded-lg p-6 text-black">
-                            <div class="flex flex-col md:flex-row gap-4 mb-4">
-                                <div class="flex-1"><label for="investment"
-                                        class="block text-sm font-medium text-gray-700 mb-1">Investment Amount
-                                        ($)</label><input type="number" id="investment"
-                                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                        placeholder="Enter investment amount" value="1000"></div>
-                                <div class="flex-1">
-                                    <div class="bg-white bg-opacity-80 rounded-lg p-2 text-black text-center">
-                                        <p class="font-bold">JAK Token Price</p>
-                                        <p class="text-xl">Loading...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="overflow-x-auto">
-                                <table class="w-full text-left">
-                                    <thead>
-                                        <tr class="border-b">
-                                            <th class="py-2">Market Cap</th>
-                                            <th class="py-2">Token Price</th>
-                                            <th class="py-2 text-right">Investment Value</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
                 <footer class="bg-[#04c983] text-white py-8">
                     <div class="container px-4 mx-auto text-center"><img src="jak-coin.png" alt="JAK Coin Logo"
                             class="mx-auto mb-2"><a href="https://solana.com/" target="_blank"
@@ -246,14 +190,7 @@
     </div>
 </div>
 
-<!-- Кнопка керування музикою -->
-<button id="music-toggle" style="display: none;">🔊</button>
 
-<!-- Додаємо тег аудіо -->
-<audio id="background-music" loop>
-    <source src="Akon - Lonely.mp3" type="audio/mpeg">
-    Your browser does not support the audio tag.
-</audio>
 
 
     </main>

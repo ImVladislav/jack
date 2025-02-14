@@ -125,8 +125,11 @@ document.addEventListener("DOMContentLoaded", function () {
     yesBtn.addEventListener("click", function () {
         modal.style.display = "none";
         mainContent.style.display = "block";
-        music.play();
-        musicToggle.style.display = "block";
+
+        // Відтворюємо музику лише після взаємодії користувача
+        music.play().then(() => {
+            musicToggle.style.display = "block"; // Показуємо кнопку музики
+        }).catch(error => console.warn("Браузер заборонив автозапуск музики:", error));
     });
 
     // Кнопка перемикання музики
