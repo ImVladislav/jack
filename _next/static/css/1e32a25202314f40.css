@@ -777,7 +777,7 @@ body {
 
 body:is(.dark *) {
     --tw-bg-opacity: 1;
-    background-color: rgb(4 201 131/var(--tw-bg-opacity, 1))
+    /* background-color: rgb(4 201 131/var(--tw-bg-opacity, 1)) */
 }
 
 @media (min-width:768px) {
